@@ -1,0 +1,11 @@
+.container-fluid{
+  background:#cccccc;
+  height:1000px;
+  padding-bottom:30px;
+  padding-top:30px;
+}
+
+.navbar{
+  background:#fff;
+  height:960px;
+}

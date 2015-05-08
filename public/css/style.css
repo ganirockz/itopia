@@ -24,3 +24,9 @@ body, html, banner-bg {
 .nav-menu{
   margin-top:12px;
 }
+
+.container{background:#fff}
+.post{
+	background:#ccc;
+	padding:10px;
+	}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="itopia">
   <head>
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
   </head>
 
-  <body>
+  <body ng-controller="appctrl">
     <!--banner-->
     <div class="banner-bg">
       <!--Navigation Bar-->
@@ -24,14 +24,20 @@
       <!--/Navigation Bar-->
       <!--Body Container-->
       <div class="container">
-        <div class="section">
+        <div class="section post">
+          <h4>give away of my bycycle</h4>
+          <p>want to give away cycle, suitable for kids between the age of 10 to 12yrs</p>
+          <span>distance:500m</span></br><span>posted: 50mins ago </span>
         </div>
       </div>
       <!--Body Container-->
     </div>
     <!--/banner-->
     <!--Import jQuery before materialize.js-->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/lib/jquery.js"></script>
+    <script type="text/javascript" src="js/lib/angular.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="js/moment.js"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>

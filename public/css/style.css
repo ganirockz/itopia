@@ -1,11 +1,26 @@
-.container-fluid{
-  background:#cccccc;
-  height:1000px;
-  padding-bottom:30px;
-  padding-top:30px;
+body, html, banner-bg {
+	/* important */
+	height: 100%;
 }
 
-.navbar{
-  background:#fff;
-  height:960px;
+.banner-bg{
+	background:url(../images/bg.jpg) no-repeat;
+	background-size:cover;
+  background-attachment:fixed;
+	height:100%;
+  width:100%;
+  overflow:hidden;
+}
+
+.nav-wrapper{
+  background:#17a086;
+  height:75px;
+}
+
+.brand-logo{
+  margin-top:10px;
+}
+
+.nav-menu{
+  margin-top:12px;
 }

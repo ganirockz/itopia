@@ -5377,16 +5377,20 @@ small {
   .card .card-title {
     color: #fff;
     font-size: 24px;
-    font-weight: 300; }
-    .card .card-title.activator {
+    font-weight: 480; }
+    .card .card-description {
+      color: #fff;
+      font-size: 20px;
+      font-weight: 300; }
+    .card .card-description.activator {
       cursor: pointer; }
-  .card.small, .card.medium, .card.large {
+  .card.small, .card.medium, .card.large .card-post.large{
     position: relative; }
-    .card.small .card-image, .card.medium .card-image, .card.large .card-image {
+    .card.small .card-image, .card.medium .card-image, .card.large .card-post.large .card-image {
       overflow: hidden; }
-    .card.small .card-content, .card.medium .card-content, .card.large .card-content {
+    .card.small .card-content, .card.medium .card-content, .card.large .card-post.large .card-content {
       overflow: hidden; }
-    .card.small .card-action, .card.medium .card-action, .card.large .card-action {
+    .card.small .card-action, .card.medium .card-action, .card.large .card-post.large .card-action {
       position: absolute;
       bottom: 0;
       left: 0;
@@ -5404,11 +5408,21 @@ small {
     .card.medium .card-content {
       height: 150px; }
   .card.large {
-    height: 500px; }
+    width: 920px;
+    height: 223px;}
     .card.large .card-image {
-      height: 330px; }
+      height: 223px; }
     .card.large .card-content {
-      height: 170px; }
+      height: 60px; }
+
+      .card-post.large {
+        width: 918px;
+        height: 140px;}
+        .card-post.large .card-image {
+          height: 223px; }
+        .card-post.large .card-content {
+          height: 22px; }
+
   .card .card-image {
     position: relative; }
     .card .card-image img {
@@ -5419,18 +5433,17 @@ small {
       top: 0;
       bottom: 0;
       width: 100%; }
-    .card .card-image .card-title {
+    .card .card-image .card-title .card-description{
       position: absolute;
       bottom: 0;
-      left: 0;
-      padding: 20px; }
+      left: 0;}
   .card .card-content {
     padding: 20px;
     border-radius: 0 0 2px 2px; }
     .card .card-content p {
       margin: 0;
       color: inherit; }
-    .card .card-content .card-title {
+    .card .card-content .card-title .card-description{
       line-height: 48px; }
   .card .card-action {
     border-top: 1px solid rgba(160, 160, 160, 0.2);
@@ -5456,7 +5469,7 @@ small {
     height: 100%;
     z-index: 1;
     display: none; }
-    .card .card-reveal .card-title {
+    .card .card-reveal .card-title .card-description{
       cursor: pointer;
       display: block; }
 

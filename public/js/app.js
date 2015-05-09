@@ -1,3 +1,5 @@
+$('#modal1').openModal();
+
 angular.module('itopia', [ ])
 .controller('appctrl', ['$scope', '$http', function ($scope, $http) {
   //console.log('hello world!');

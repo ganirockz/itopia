@@ -3,6 +3,7 @@
   <head>
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 
     <!--Let browser know website is optimized for mobile-->
@@ -24,11 +25,23 @@
       <!--/Navigation Bar-->
       <!--Body Container-->
       <div class="container">
-        <div class="section post">
-          <h4>give away of my bycycle</h4>
-          <p>want to give away cycle, suitable for kids between the age of 10 to 12yrs</p>
-          <span>distance:500m</span></br><span>posted: 50mins ago </span>
+        <div class="section post" ng-repeat="post in posts">
+          <img width="100px" src="{{post.img}}"/>
+          <h4>{{post.title}}</h4>
+          <p>{{post.description}}</p>
+          <span>Distance: 500m</span></br>
+          <span>Posted: 50mins ago </span>
         </div>
+      </div>
+      <div class="form" style="background:#fff;margin-bottom:50px;width:250px;margin-left:20px">
+        <ul>
+          <li><input type="text" placeholder="Title" ng-model="post.title"/></li>
+          <li><input type="text" placeholder="description" ng-model="post.description"></li>
+          <li><input type="text" ng-model="asyncSelected" placeholder="Locations loaded via $http"
+             typeahead="address for address in getLocation($viewValue)"
+            typeahead-loading="loadingLocations" ng-model="post.location"></li>
+          <li><input type="button" value="submit" ng-click="addPost(post)"/></li>
+        </ul>
       </div>
       <!--Body Container-->
     </div>
@@ -36,8 +49,12 @@
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="js/lib/jquery.js"></script>
     <script type="text/javascript" src="js/lib/angular.min.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script src="js/moment.js"></script>
+    <script type="text/javascript" src="js/lib/materialize.min.js"></script>
+    <script src="js/lib/ui-bootstrap.js"></script>
+    <script src="js/lib/moment.js"></script>
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-d9kv8rcibwCr8mHfzL5tc4tojPj5mVw">
+    </script>
     <script src="js/app.js"></script>
   </body>
 </html>

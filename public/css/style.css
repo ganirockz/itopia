@@ -9,7 +9,7 @@ body, html, banner-bg {
   background-attachment:fixed;
 	height:100%;
   width:100%;
-  overflow:hidden;
+  overflow:scroll;
 }
 
 .nav-wrapper{

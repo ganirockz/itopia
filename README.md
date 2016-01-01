@@ -1,2 +1,3 @@
 # itopia
-a counity app to share and give away stuff
+a coumnity app to share and give away stuff
+the app bult for the hacathon hosted in freshdesk chennai
